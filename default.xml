@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="aosip"
+           fetch="https://github.com/AOSIP/" />   
+  <remote  name="fox"
+           fetch="https://github.com/xlxfoxxlx/" />
+  <remote  name="bb"
+           fetch="https://bitbucket.org/"/>
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="android-review.googlesource.com" />
@@ -38,7 +44,6 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
-  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -315,6 +320,7 @@
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
+  <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
   <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
   <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="pdk,qcom_msm8x74" />
@@ -330,8 +336,6 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" groups="pdk-fs"/>
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" groups="pdk-fs" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" groups="pdk-fs" />
@@ -339,9 +343,7 @@
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" groups="pdk-fs" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
-  <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
@@ -349,16 +351,13 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="pdk-fs" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
-  <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" groups="pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" />
@@ -379,7 +378,6 @@
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
@@ -456,29 +454,58 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <!-- Androidx -->
-  <project path="build" name="camcory/platform_build" remote="github" revision="MM" >
+  <!-- AOSiP -->
+  <project path="build" name="platform_build" remote="aosip" revision="oms" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/moto/shamu" name="camcory/device_moto_shamu" remote="github" revision="MX" />
+  <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
+  <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip" revision="mm6.0" />
+  <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="aosip" revision="mm6.0" />
+  <project path="device/moto/shamu" name="platform_device_moto_shamu" remote="aosip" revision="mm6.0" />
+  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="external/DUtils" name="camcory/android_external_DUtils" remote="github" revision="m" />
-  <project path="external/sepolicy" name="camcory/platform_external_sepolicy" remote="github" revision="MX" />
-  <project path="frameworks/base" name="camcory/platform_frameworks_base" remote="github" revision="m" />
-  <project path="packages/apps/Contacts" name="camcory/platform_packages_apps_contacts" remote="github" revision="MX" />
-  <project path="packages/apps/ContactsCommon" name="camcory/platform_packages_apps_contacts_common" remote="github" revision="MX" />
-  <project path="packages/apps/Dialer" name="camcory/platform_packages_apps_dialer" remote="github" revision="MX" />
-  <project path="packages/apps/PhoneCommon" name="camcory/platform_packages_apps_PhoneCommon" remote="github" revision="MX" />
-  <project path="packages/apps/DUI" name="camcory/android_packages_apps_DUI" remote="github" revision="m" />
-  <project path="packages/apps/Settings" name="camcory/platform_packages_apps_settings" remote="github" revision="m" />
-  <project path="system/core" name="camcory/platform_system_core" remote="github" revision="MX" />
-  <project path="vendor/androidx" name="camcory/vendor_androidx" remote="github" revision="m" />
-  <project path="vendor/moto" name="camcory/proprietary_vendor_motorola" remote="github" revision="MX" />
+  <project path="external/sepolicy" name="camcory/platform_external_sepolicy" remote="aosip" revision="oms" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
+  <project path="kernel/lge/bullhead" name="akhilnarang/ThugLife_bullhead" remote="github" revision="master" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="mm6.0"/>
+  <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="mm6.0"/>
+  <project path="packages/apps/Contacts" name="camcory/platform_packages_apps_contacts" remote="aosip" revision="oms" />
+  <project path="packages/apps/ContactsCommon" name="camcory/platform_packages_apps_contacts_common" remote="aosip" revision="oms" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_dialer" remote="aosip" revision="oms" />
+  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="mm6.0"/>
+  <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/PhoneCommon" name="camcory/platform_packages_apps_PhoneCommon" remote="aosip" revision="oms" />
+  <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="aosip" revision="oms" />
+  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="aosip" revision="oms" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" revision="mm6.0" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="mm6.0" />
+  <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="aosip" revision="mm6.0" />
+  <project path="system/core" name="platform_system_core" remote="aosip" revision="oms" />
+  <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="oms" />
+  <project path="vendor/huawei" name="platform_vendor_huawei" remote="aosip" revision="mm6.0" />
+  <project path="vendor/lge" name="platform_vendor_lge" remote="aosip" revision="mm6.0" />
+  <project path="vendor/moto" name="proprietary_vendor_moto" remote="aosip" revision="mm6.0" />
 
   <!-- Dirty Unicorns -->
   <project path="external/android-visualizer" name="DirtyUnicorns/android_external_android-visualizer" remote="github" revision="m" />
   <project path="external/busybox" name="DirtyUnicorns/android_external_busybox" remote="github" revision="m" />
 
-  <!-- PureNexusProject -->
-  <project path="packages/inputmethods/LatinIME" name="PureNexusProject/android_packages_inputmethods_LatinIME" remote="github" revision="mm" />
+<!-- Uber Toolchain  -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.x-uber" name="DespairFactor/arm-eabi-5.x" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-uber" name="DespairFactor/arm-eabi-6.0" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="DespairFactor/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.x-uber" name="DespairFactor/arm-linux-androideabi-5.x" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="UBERTC/aarch64-linux-android-4.9" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="DespairFactor/aarch64-linux-android-4.9-kernel" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel" name="DespairFactor/aarch64-linux-android-5.x-kernel" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.0-kernel" name="DespairFactor/aarch64-linux-android-6.0-kernel" remote="bb" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-7.0-kernel" name="DespairFactor/aarch64-linux-android-7.0-kernel" remote="bb" revision="master" />
 
 </manifest>
