@@ -456,7 +456,7 @@
   </project>
   <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
-  <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip" revision="mm6.0" />
+  <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip" revision="oms" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="aosip" revision="mm6.0" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" remote="aosip" revision="mm6.0" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
