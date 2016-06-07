@@ -462,6 +462,7 @@
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="external/busybox" name="platform_external_busybox" remote="aosip" revision="mm6.0" />
   <project path="external/DUtils" name="camcory/android_external_DUtils" remote="github" revision="m" />
+  <project path="external/google" name="platform_external_google" remote="aosip" revision="mm6.0" />
   <project path="external/sepolicy" name="platform_external_sepolicy" remote="aosip" revision="oms" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
