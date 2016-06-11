@@ -455,7 +455,6 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
-  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
   <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip" revision="oms" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="aosip" revision="mm6.0" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" remote="aosip" revision="oms" />
@@ -466,6 +465,7 @@
   <project path="external/sepolicy" name="platform_external_sepolicy" remote="aosip" revision="oms" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
+  <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="mm6.0" />
   <project path="kernel/huawei/angler" name="saberCore/saberCore64"  remote="github" revision="saberTest-p-uber" />
   <project path="kernel/lge/bullhead" name="akhilnarang/ThugLife_bullhead" remote="github" revision="master" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="mm6.0"/>
