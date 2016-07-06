@@ -457,11 +457,11 @@
   <project path="external/DUtils" name="camcory/android_external_DUtils" remote="github" revision="m" />
   <project path="external/google" name="platform_external_google" remote="aosip" revision="mm6.0" />
   <project path="external/sepolicy" name="platform_external_sepolicy" remote="aosip" revision="oms" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms3" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="mm6.0" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" revision="oms" />
-  <project path="kernel/huawei/angler" name="saberCore/saberCore64"  remote="github" revision="saberTest-p-uber" />
+  <project path="kernel/huawei/angler" name="YAOSP/kernel_huawei_angler" remote="github" revision="YAOSP-MM-6.0.1_r45" />
   <project path="kernel/lge/bullhead" name="akhilnarang/ThugLife_bullhead" remote="github" revision="master" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="mm6.0"/>
   <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="aosip" revision="oms" />
