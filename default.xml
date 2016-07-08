@@ -2,7 +2,8 @@
 <manifest>
 
   <remote  name="aosip"
-           fetch="https://github.com/AOSIP/" />   
+           fetch="https://github.com/AOSIP/"
+	   revision="oms" />   
   <remote  name="bb"
            fetch="https://bitbucket.org/"/>
   <remote name="aosp"
@@ -446,48 +447,48 @@
   <project path="build" name="platform_build" remote="aosip" revision="oms" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
+  <project path="bionic" name="platform_bionic" remote="aosip" revision="oms" />
   <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip" revision="oms" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="aosip" revision="oms" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" remote="aosip" revision="oms" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
-  <project path="external/busybox" name="platform_external_busybox" remote="aosip" revision="mm6.0" />
+  <project path="external/busybox" name="platform_external_busybox" remote="aosip" revision="oms" />
   <project path="external/DUtils" name="android_external_DUtils" remote="aosip" revision="oms" />
-  <project path="external/google" name="platform_external_google" remote="aosip" revision="mm6.0" />
+  <project path="external/google" name="platform_external_google" remote="aosip" revision="oms" />
   <project path="external/sepolicy" name="platform_external_sepolicy" remote="aosip" revision="oms" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="oms" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms3" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
-  <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="mm6.0" />
+  <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="oms" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" revision="oms" />
   <project path="kernel/huawei/angler" name="YAOSP/kernel_huawei_angler" remote="github" revision="YAOSP-MM-6.0.1_r45" />
   <project path="kernel/lge/bullhead" name="akhilnarang/ThugLife_bullhead" remote="github" revision="master" />
-  <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="mm6.0"/>
+  <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="oms"/>
   <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="aosip" revision="oms" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="oms" />
-  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="aosip" revision="oms" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_dialer" remote="aosip" revision="oms" />
   <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="aosip" revision="oms" />
-  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="aosip" revision="mm6.0" />
-  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="mm6.0"/>
-  <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="aosip" revision="oms" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="oms"/>
+  <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="oms" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" revision="oms" />
-  <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="aosip" revision="oms" />
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="oms" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="oms" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="oms" />
   <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="aosip" revision="oms" />
-  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" revision="mm6.0" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="mm6.0" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" revision="oms" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="oms" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="oms" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="aosip" revision="oms" />
-  <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="aosip" revision="mm6.0" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="aosip" revision="mm6.0" />
+  <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="aosip" revision="oms" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="aosip" revision="oms" />
   <project path="system/core" name="platform_system_core" remote="aosip" revision="oms" />
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="oms" />
-  <project path="vendor/huawei" name="platform_vendor_huawei" remote="aosip" revision="mm6.0" />
+  <project path="vendor/huawei" name="platform_vendor_huawei" remote="aosip" revision="oms" />
   <project path="vendor/lge" name="platform_vendor_lge" remote="aosip" revision="oms" />
-  <project path="vendor/moto" name="proprietary_vendor_moto" remote="aosip" revision="mm6.0" />
+  <project path="vendor/moto" name="proprietary_vendor_moto" remote="aosip" revision="oms" />
 
   <!-- Dirty Unicorns -->
   <project path="external/android-visualizer" name="DirtyUnicorns/android_external_android-visualizer" remote="github" revision="m" />
