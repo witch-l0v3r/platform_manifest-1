@@ -486,7 +486,7 @@
   <project path="system/core" name="platform_system_core" remote="aosip" revision="oms" />
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="oms" />
   <project path="vendor/huawei" name="platform_vendor_huawei" remote="aosip" revision="mm6.0" />
-  <project path="vendor/lge" name="platform_vendor_lge" remote="aosip" revision="mm6.0" />
+  <project path="vendor/lge" name="platform_vendor_lge" remote="aosip" revision="oms" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="aosip" revision="mm6.0" />
 
   <!-- Dirty Unicorns -->
