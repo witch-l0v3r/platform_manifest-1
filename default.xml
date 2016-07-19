@@ -453,6 +453,7 @@
   <project path="bionic" name="platform_bionic" remote="aosip" revision="oms" />
   <project path="device/huawei/angler" name="platform_device_huawei_angler" remote="aosip-devices" revision="oms" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" remote="aosip-devices" revision="oms" />
+  <project path="device/lge/hammerhead" name="platform_device_lge_hammerhead" remote="aosip-devices" revision="oms" />
   <project path="device/lge/mako" name="platform_device_lge_mako" remote="aosip-devices" revision="oms" />
   <project path="device/moto/shamu" name="platform_device_moto_shamu" remote="aosip-devices" revision="oms" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
@@ -505,7 +506,6 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DespairFactor/aarch64-linux-android-4.9" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="DespairFactor/aarch64-linux-android-4.9-kernel" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel" name="DespairFactor/aarch64-linux-android-5.x-kernel" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x-kernel" name="DespairFactor/aarch64-linux-android-6.x-kernel" remote="bb" revision="master" />
 
   <!-- Masquerade -->
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="master" />
