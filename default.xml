@@ -461,10 +461,10 @@
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="oms" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" revision="oms" />
   <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="oms"/>
-  <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="aosip" revision="oms" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="oms" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="oms" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="aosip" revision="oms" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_dialer" remote="aosip" revision="oms" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" revision="oms" />
   <project path="packages/apps/DUI" name="android_packages_apps_DUI" remote="aosip" revision="oms" />
   <project path="packages/apps/ExactCalculator" name="platform_packages_apps_ExactCalculator" remote="aosip" revision="oms" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="oms"/>
@@ -474,7 +474,7 @@
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="oms" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="oms" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="oms" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_settings" remote="aosip" revision="oms" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="oms" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" revision="oms" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="oms" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="oms" />
