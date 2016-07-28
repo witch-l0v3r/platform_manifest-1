@@ -433,6 +433,10 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  
+<!-- Kernel Adiutor -->
+  <project path="packages/apps/KernelAdiutor" name="AOSiP-Devices/KernelAdiutor" remote="github" revision="mm6.0" />
+  <project path="packages/apps/FloatingActionButton" name="AOSiP-Devices/FloatingActionButton" remote="github" revision="mm6.0" />
 
 <!-- AOSiP -->
   <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
