@@ -460,7 +460,7 @@
   <project path="external/google" name="platform_external_google" remote="aosip" revision="oms" />
   <project path="external/sepolicy" name="platform_external_sepolicy" remote="aosip" revision="oms" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="oms" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms3" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="oms" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="oms" />
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="aosip" revision="oms" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" revision="oms" />
