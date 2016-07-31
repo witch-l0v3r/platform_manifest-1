@@ -433,8 +433,8 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   
 <!-- Kernel Adiutor -->
-  <project path="packages/apps/KernelAdiutor" name="AOSiP-Devices/KernelAdiutor" remote="github" revision="mm6.0" />
-  <project path="packages/apps/FloatingActionButton" name="AOSiP-Devices/FloatingActionButton" remote="github" revision="mm6.0" />
+  <project path="packages/apps/KernelAdiutor" name="platform_packages_apps_KronicAdiutor" remote="aosip" revision="mm6.0" />
+  <project path="packages/apps/FloatingActionButton" name="FloatingActionButton" remote="aosip" revision="mm6.0" />
 
 <!-- AOSiP -->
   <project path="bionic" name="platform_bionic" remote="aosip" revision="mm6.0" />
