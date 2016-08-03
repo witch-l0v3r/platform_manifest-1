@@ -14,7 +14,7 @@
            review="android-review.googlesource.com" />
   <remote  name="github"
            fetch="http://github.com/" />
-  <default revision="refs/tags/android-6.0.1_r54"
+  <default revision="refs/tags/android-6.0.1_r62"
            remote="aosp"
            sync-j="8" 
 	   sync-c="true" />
