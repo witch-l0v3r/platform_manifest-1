@@ -521,7 +521,4 @@
   <!-- Masquerade -->
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="master" />
 
-  <!-- DragonTC -->
-  <project path="prebuilts/clang/linux-x86/host/3.9" name="f100cleveland/dragontc-3.9" remote="bb" revision="master"/>
-
 </manifest>
