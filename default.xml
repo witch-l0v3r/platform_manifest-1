@@ -9,6 +9,9 @@
 
   <remote  name="bb"
            fetch="https://bitbucket.org/"/>
+		   
+  <remote  name="linaro"
+           fetch="git://android.git.linaro.org" />	   
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -489,5 +492,12 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="UBERTC/aarch64-linux-android-4.9" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel" name="UBERTC/aarch64-linux-android-4.9-kernel" remote="bb" revision="master" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.x-kernel" name="UBERTC/aarch64-linux-android-5.3-kernel" remote="bb" revision="master" />
-
+  
+<!-- Linaro Toolchain -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro.git" remote="linaro" revision="master" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.4-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.4-linaro.git" remote="linaro" revision="master" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-linaro" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-linaro.git" remote="linaro" revision="master" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.4-linaro" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-5.4-linaro.git" remote="linaro" revision="master" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.1-linaro" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.1-linaro.git" remote="linaro" revision="master" clone-depth="1" />
+  
 </manifest>
