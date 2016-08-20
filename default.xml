@@ -450,7 +450,6 @@
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" revision="mm6.0" />
   <project path="manifest" name="platform_manifest" remote="aosip" revision="mm6.0" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="mm6.0"/>
-  <project path="packages/apps/Browser" name="platform_packages_apps_Browser" remote="aosip" revision="mm6.0"/>
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="mm6.0" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="mm6.0" />
   <project path="packages/apps/CustomWallpapers" name="platform_packages_apps_CustomWallpapers" remote="aosip" revision="mm6.0" />
