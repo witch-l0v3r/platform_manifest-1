@@ -483,7 +483,7 @@
   <project path="external/busybox" name="DirtyUnicorns/android_external_busybox" remote="github" revision="m" />
 
 <!-- purenexus wlan  -->
-  <project path="hardware/broadcom/wlan" name="PureNexusProject/android_hardware_broadcom_wlan" remote="github" revision="mm2" />
+  <project path="hardware/broadcom/wlan" name="PureNexusProject-Legacy/android_hardware_broadcom_wlan" remote="github" revision="mm2" />
 
 <!-- Uber Toolchain  -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.x" name="UBERTC/arm-eabi-5.3" remote="bb" revision="master" />
