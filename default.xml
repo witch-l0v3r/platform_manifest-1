@@ -10,6 +10,9 @@
   <remote  name="bb"
            fetch="https://bitbucket.org/" />
 
+  <remote  name="fox"
+           fetch="https://github.com/xlxfoxxlx/" />
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
@@ -17,7 +20,7 @@
   <remote  name="github"
            fetch="http://github.com/" />
 
-  <default revision="refs/tags/android-7.0.0_r19"
+  <default revision="refs/tags/android-7.1.0_r7"
            remote="aosp"
            sync-j="16" 
            sync-c="true"/>
@@ -29,6 +32,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+  <project path="art" name="platform/art" groups="pdk" />
+  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -260,6 +265,7 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
+  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
@@ -332,6 +338,7 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
@@ -352,7 +359,14 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
+  <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
+  <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
+  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
+  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="pdk,qcom,qcom_display" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
+  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994" />
   <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996" />
@@ -379,6 +393,7 @@
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
+  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
@@ -411,6 +426,8 @@
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" groups="pdk-fs" />
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="adp8064,pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" />
@@ -475,48 +492,34 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- AOSiP Repos -->
-  <project path="art" name="platform_art" remote="aosip" revision="n" />
-  <project path="bionic" name="platform_bionic" remote="aosip" revision="n" />
-  <project path="build" name="platform_build" remote="aosip" revision="n-oms" >
+  <project path="build" name="platform_build" remote="aosip" revision="n7" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="external/busybox" name="platform_external_busybox" remote="aosip" revision="n" />
   <project path="external/google" name="platform_external_google" remote="aosip" revision="n" />
-  <project path="external/DUtils" name="platform_external_DUtils" remote="aosip" revision="n" />
-  <project path="external/skia" name="platform_external_skia" remote="aosip" revision="n" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="n-oms" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="n-oms" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="n-oms" />
-  <project path="frameworks/support" name="platform_frameworks_support" remote="aosip" revision="n" />
-  <project path="hardware/broadcom/wlan" name="platform_hardware_broadcom_wlan" remote="aosip" revision="n" />
-  <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" remote="aosip" revision="n" />
-  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" remote="aosip" revision="n" />
-  <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="aosip" revision="n" />
-  <project path="hardware/qcom/display" name="platform_hardware_qcom_display" remote="aosip" revision="n" />
-  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" remote="aosip" revision="n" />
-  <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" remote="aosip" revision="n" />
-  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" remote="aosip" revision="n" />
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="n" />
-  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="n-oms" /> 
-  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="n-oms" />
-  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" revision="n-oms" />
-  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="aosip" revision="n" />
+  <project path="external/DUtils" name="platform_external_DUtils" remote="aosip" revision="n7" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="n7" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="n7" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="n7" />
+  <project path="frameworks/support" name="platform_frameworks_support" remote="aosip" revision="n7" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="n7" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="n7" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="n7" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" revision="n7" />
+  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="aosip" revision="n7" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="n" />
   <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="n" />
-  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" revision="n" />
-  <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" revision="n" />
-  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="aosip" revision="n" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" revision="n7" />
+  <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" revision="n7" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="aosip" revision="n7" />
   <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="n" />
-  <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" revision="n" />
-  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="n-oms" />
-  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="n-oms" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="n-oms" />
-  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="n" />
-  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="n-oms" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="aosip" revision="n" />
-  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="aosip" revision="n" />
-  <project path="system/core" name="platform_system_core" remote="aosip" revision="n" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" revision="n-oms" />
+  <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" revision="n7" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="n7" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="n7" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="n7" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="n7" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="n7" />
+  <project path="system/core" name="platform_system_core" remote="aosip" revision="n7" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" revision="n7" />
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="n-oms" />
 
   <!-- Masquerade -->
