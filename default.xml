@@ -496,7 +496,7 @@
   <project path="external/google" name="platform_external_google" remote="aosip" revision="n" />
   <project path="external/DUtils" name="platform_external_DUtils" remote="aosip" revision="n7x" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="n7x" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="n7x" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="n7x-oms" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="n7x" />
   <project path="frameworks/support" name="platform_frameworks_support" remote="aosip" revision="n7x" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="n7x" />
@@ -513,7 +513,7 @@
   <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" revision="n7" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="n7x" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="n7x" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="n7x" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="n7x-oms" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="n7x" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="n7x" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="aosip" revision="n7x" />
@@ -521,7 +521,7 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="aosip" revision="n7x" />
   <project path="system/core" name="platform_system_core" remote="aosip" revision="n7x" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" revision="n7x" />
-  <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="n-oms" />
+  <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="n7x" />
 
   <!-- Masquerade -->
   <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
