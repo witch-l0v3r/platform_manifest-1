@@ -496,6 +496,7 @@
   <project path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" remote="aosip" revision="n7x" />
   <project path="hardware/qcom/media" name="platform_hardware_qcom_media" remote="aosip" revision="n7x" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="n7x" />
+  <project path="packages/apps/CalendarWidget" name="platform_packages_apps_CalendarWidget" remote="aosip" revision="n7x" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="n7x" />
   <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="n7x" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" revision="n7x" />
@@ -521,11 +522,9 @@
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" revision="n7x" />
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" revision="n7x" />
 
-  <!-- Masquerade -->
-  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
-
-  <!-- Eleven -->
+  <!-- Misc Packages -->
   <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" remote="github" revision="cm-14.1" />
+  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
 
   <!--toolchains-->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="DirtyUnicorns/arm-eabi-4.8" remote="github" revision="n" />
