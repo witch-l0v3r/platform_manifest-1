@@ -29,7 +29,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -262,7 +261,6 @@
   <project path="external/selinux" name="platform/external/selinux" groups="pdk" />
   <project path="external/shflags" name="platform/external/shflags" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sl4a" name="platform/external/sl4a" />
   <project path="external/slf4j" name="platform/external/slf4j" groups="pdk-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs,pdk-fs" />
@@ -383,7 +381,6 @@
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" groups="pdk-fs" />
@@ -479,12 +476,14 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- AOSiP Repos -->
+  <project path="art" name="platform_art" remote="aosip" revision="n7x" />
   <project path="bionic" name="platform_bionic" remote="aosip" revision="n7x" />
   <project path="build" name="platform_build" remote="aosip" revision="n7x" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="external/google" name="platform_external_google" remote="aosip" revision="n" />
+  <project path="external/google" name="platform_external_google" remote="aosip" revision="n7x" />
   <project path="external/DUtils" name="platform_external_DUtils" remote="aosip" revision="n7x" />
+  <project path="external/skia" name="platform_external_skia" remote="aosip" revision="n7x" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" revision="n7x" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" revision="n7x-oms" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" revision="n7x" />
@@ -498,19 +497,21 @@
   <project path="hardware/qcom/media" name="platform_hardware_qcom_media" remote="aosip" revision="n7x" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" revision="n7x" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="aosip" revision="n7x" />
-  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="n7" />
+  <project path="packages/apps/ContactsCommon" name="platform_packages_apps_ContactsCommon" remote="aosip" revision="n7x" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" revision="n7x" />
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="aosip" revision="n7x" />
-  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="n" />
-  <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="n" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="aosip" revision="n7x" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="aosip" revision="n7x" />
+  <project path="packages/apps/LockClock" name="platform_packages_apps_LockClock" remote="aosip" revision="n7x" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" revision="n7x" />
-  <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" revision="n7" />
+  <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" revision="n7x" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="aosip" revision="n7x" />
-  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="n" />
-  <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" revision="n7" />
+  <project path="packages/apps/OmniSwitch" name="platform_packages_apps_OmniSwitch" remote="aosip" revision="n7x" />
+  <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" revision="n7x" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="aosip" revision="n7x" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="aosip" revision="n7x" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="aosip" revision="n7x-oms" />
+  <project path="packages/apps/WallpaperPicker" name="platform_packages_apps_WallpaperPicker" remote="aosip" revision="n7x" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" revision="n7x" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" revision="n7x" />
   <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="aosip" revision="n7x" />
