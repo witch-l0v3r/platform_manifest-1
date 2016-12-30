@@ -81,6 +81,10 @@
   <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="laos" />
 <!-- END LINEAGE-OS -->
 
+<!-- BEGIN SUBSTRATUM -->
+  <project name="TeamSubstratum/masquerade" path="packages/apps/masquerade" remote="github" revision="n" />
+<!-- ENG SUBSTRATUM -->
+
 <!-- BEGIN CODEAURORA -->
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="android-framework.lnx.2.0.r5-rel"/>
