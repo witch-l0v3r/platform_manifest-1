@@ -14,10 +14,26 @@
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/n-mr1" />
 
-<!-- BEGIN AOSP-CAF -->
-  <project name="platform_build" path="build" remote="aosp-caf" >
+  <remote  name="kroniclabs"
+           fetch="ssh://git@gitlab.com/TeamIllusion"
+           revision="refs/heads/n-mr1" />
+
+  <remote  name="aosip"
+           fetch="https://github.com/AOSiP"
+           revision="refs/heads/n-mr1" />
+
+
+<!-- AOSiP -->
+  <project name="build" path="build" remote="kroniclabs" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project name="frameworks_base" path="frameworks/base" remote="kroniclabs" />
+  <project name="manifest" path="manifest" remote="kroniclabs" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="kroniclabs" />
+  <project name="vendor_aosip" path="vendor/aosip" remote="kroniclabs" />
+<!-- End AOSiP -->
+
+<!-- BEGIN AOSP-CAF -->
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" groups="pdk,tradefed" />
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
@@ -42,7 +58,6 @@
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="aosp-caf" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
@@ -55,7 +70,6 @@
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="n-mr1-caf" remote="aosp-caf" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" />
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosp-caf" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-caf" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" />
@@ -66,7 +80,6 @@
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosp-caf" />
   <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
