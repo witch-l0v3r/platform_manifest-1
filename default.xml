@@ -9,7 +9,7 @@
   <remote  name="laos"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
-	
+
   <remote  name="aosp-caf"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/n-mr1" />
@@ -24,13 +24,26 @@
 
 
 <!-- AOSiP -->
-  <project name="build" path="build" remote="kroniclabs" >
-  <copyfile src="core/root.mk" dest="Makefile" />
+  <project name="platform_build" path="build" remote="kroniclabs" >
+    <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project name="frameworks_base" path="frameworks/base" remote="kroniclabs" />
-  <project name="manifest" path="manifest" remote="kroniclabs" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="kroniclabs" />
-  <project name="vendor_aosip" path="vendor/aosip" remote="kroniclabs" />
+  <project name="platform_external_DUtils" path="external/DUtils" remote="kroniclabs" />
+  <project name="platform_frameworks_av" path="frameworks/av" remote="kroniclabs" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="kroniclabs" />
+  <project name="platform_frameworks_native" path="frameworks/native" remote="kroniclabs" />
+  <project name="platform_frameworks_support" path="frameworks/support" remote="kroniclabs" />
+  <project name="platform_manifest" path="manifest" remote="kroniclabs" />
+  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="kroniclabs" />
+  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="kroniclabs" />
+  <project name="platform_packages_apps_DUI" path="packages/apps/DUI" remote="kroniclabs" />
+  <project name="platform_packages_apps_Messaging" path="packages/apps/Messaging" remote="kroniclabs" />
+  <project name="platform_packages_apps_OwlsNest" path="packages/apps/OwlsNest" remote="kroniclabs" />
+  <project name="platform_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="kroniclabs" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="kroniclabs" />
+  <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="kroniclabs" />
+  <project name="platform_system_core" path="system/core" remote="kroniclabs" />
+  <project name="platform_system_sepolicy" path="system/sepolicy" remote="kroniclabs" />
+  <project name="platform_vendor_aosip" path="vendor/aosip" remote="kroniclabs" />
 <!-- End AOSiP -->
 
 <!-- BEGIN AOSP-CAF -->
@@ -57,8 +70,6 @@
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
-  <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
@@ -68,16 +79,12 @@
   <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="n-mr1-caf" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril" remote="aosp-caf" />
   <project name="platform_hardware_ril" path="hardware/ril-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" />
-  <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosp-caf" />
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" />
   <project name="platform_system_bt" path="system/bt" remote="aosp-caf" />
-  <project name="platform_system_core" path="system/core" remote="aosp-caf" />
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
   <project name="platform_system_media" path="system/media" remote="aosp-caf" />
-  <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosp-caf" />
   <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
@@ -383,7 +390,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="android-framework.lnx.2.0.r5-rel"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/support" path="frameworks/support" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/volley" path="frameworks/volley" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/webview" path="frameworks/webview" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="android-framework.lnx.2.0.r5-rel"/>
@@ -424,13 +430,11 @@
   <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="android_ui.lnx.2.1.r5-rel"/>
-  <project groups="pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="android_ui.lnx.2.1.r5-rel"/>
   <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="nfc-aosp.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="android_ui.lnx.2.1.r5-rel"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="android_ui.lnx.2.1.r5-rel"/>
@@ -462,7 +466,6 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="android_ui.lnx.2.1.r5-rel"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="android-framework.lnx.2.0.r5-rel"/>
