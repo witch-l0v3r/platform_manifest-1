@@ -22,6 +22,8 @@
            fetch="https://github.com/AOSiP"
            revision="refs/heads/n-mr1" />
 
+  <remote  name="devices"
+           fetch="https://github.com/AOSiP-devices" />
 
 <!-- AOSiP -->
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="kroniclabs" />
