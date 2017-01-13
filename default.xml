@@ -22,10 +22,10 @@
            fetch="https://github.com/AOSiP-devices" />
 
 <!-- AOSiP -->
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
   <project name="platform_build" path="build" remote="aosip" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project name="platform_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
   <project name="platform_external_DUtils" path="external/DUtils" remote="aosip" />
   <project name="platform_external_google" path="external/google" remote="aosip" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="aosip" />
