@@ -21,6 +21,9 @@
   <remote  name="devices"
            fetch="https://github.com/AOSiP-devices" />
 
+  <remote name="bb"
+           fetch="https://bitbucket.org" />
+
 <!-- AOSiP -->
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
   <project name="platform_build" path="build" remote="aosip" >
