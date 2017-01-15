@@ -101,7 +101,7 @@
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="laos" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="laos" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="laos" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="laos" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media" remote="laos" />
 <!-- END LINEAGE-OS -->
 
 <!-- BEGIN SUBSTRATUM -->
@@ -409,6 +409,8 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Calculator" path="packages/apps/Calculator" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="android_ui.lnx.2.1.r5-rel"/>
+  <project groups="pdk-fs" name="platform/packages/apps/Camera" path="packages/apps/Camera" revision="android-framework.lnx.2.0.r5-rel"/>
+  <project groups="pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="android_ui.lnx.2.1.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="atel.lnx.2.0.r5-rel"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="android-framework.lnx.2.0.r5-rel"/>
