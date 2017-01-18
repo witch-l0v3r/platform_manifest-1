@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
-  <default remote="caf" revision="android-external.lnx.2.0.r5-rel" sync-c="true" sync-j="16" sync-f="true"/>
+
+   <remote fetch="git://codeaurora.org/quic/la"
+           name="caf"
+           review="codeaurora.org"/>
+
+  <default remote="caf"
+           revision="android-external.lnx.2.0.r5-rel"
+           sync-c="true"
+           sync-j="16"
+           sync-f="true"/>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           revision="refs/tags/android-7.1.1_r1" />
 
   <remote  name="github"
            fetch="https://github.com" />
