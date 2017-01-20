@@ -47,6 +47,7 @@
   <project name="platform_frameworks_base" path="frameworks/base" remote="aosip" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="aosip" />
   <project name="platform_frameworks_support" path="frameworks/support" remote="aosip" />
+  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosip" />
   <project name="platform_manifest" path="manifest" remote="aosip" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosip" />
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosip" />
@@ -93,7 +94,6 @@
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
-  <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
   <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="n-mr1-caf" remote="aosp-caf" />
   <project name="platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="aosp-caf" />
