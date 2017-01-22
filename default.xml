@@ -64,8 +64,8 @@
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosip" />
   <project name="platform_vendor_aosip" path="vendor/aosip" remote="aosip" >
     <linkfile src="tools/sync.sh" dest="sync.sh" />
-  <project name="platform_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="aosip" />
   </project>
+  <project name="platform_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="aosip" />
 
 <!-- End AOSiP -->
 
