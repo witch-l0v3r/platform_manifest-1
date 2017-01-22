@@ -66,6 +66,7 @@
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosip" />
   <project name="platform_vendor_aosip" path="vendor/aosip" remote="aosip" >
     <linkfile src="tools/sync.sh" dest="sync.sh" />
+  <project name="platform_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="aosip" />
   </project>
 
 <!-- End AOSiP -->
@@ -539,7 +540,6 @@
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci" revision="nfc.lnx.2.0.r5-rel"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks" revision="nfc.lnx.2.0.r5-rel"/>
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/packages/apps/Nfc" revision="nfc.lnx.2.0.r5-rel"/>
-  <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth" revision="bt-qc.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="wigig.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="core-technologies.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="android_ui.lnx.2.1.r5-rel"/>
