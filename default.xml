@@ -31,10 +31,8 @@
            revision="refs/heads/n-mr1" />
 
   <remote  name="devices"
-           fetch="https://github.com/AOSiP-devices" />
-
-  <remote name="bb"
-           fetch="https://bitbucket.org" />
+           fetch="https://github.com/AOSiP-devices"
+	   revision="refs/heads/n-mr1" />
 
 <!-- AOSiP -->
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
