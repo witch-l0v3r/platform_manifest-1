@@ -32,7 +32,7 @@
 
   <remote  name="devices"
            fetch="https://github.com/AOSiP-devices"
-	   revision="refs/heads/n-mr1" />
+           revision="refs/heads/n-mr1" />
 
 <!-- AOSiP -->
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
@@ -48,6 +48,7 @@
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosip" />
   <project name="platform_manifest" path="manifest" remote="aosip" />
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosip" />
+  <project name="platform_packages_apps_CalendarWidget" path="packages/apps/CalendarWidget" remote="aosip" revision="n7x" />
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosip" />
   <project name="platform_packages_apps_DUI" path="packages/apps/DUI" remote="aosip" />
   <project name="platform_packages_apps_LockClock" path="packages/apps/LockClock" remote="aosip" />
