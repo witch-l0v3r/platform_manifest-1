@@ -115,6 +115,8 @@
 
 <!-- BEGIN LINEAGE-OS -->
   <project name="android_external_libncurses" path="external/libncurses" remote="laos" />
+  <project name="android_external_libnfc-nci" path="external/libnfc-nci" remote="laos" />
+  <project name="android_external_libnfc-nxp" path="external/libnfc-nxp" remote="laos" />
   <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="laos" />
   <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="laos" />
   <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="laos" />
@@ -273,8 +275,6 @@
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk" name="platform/external/libmtp" path="external/libmtp"/>
   <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack"/>
-  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci" revision="nfc-aosp.lnx.2.0.r5-rel"/>
-  <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
   <project name="platform/external/libnfnetlink" path="external/libnfnetlink"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg"/>
