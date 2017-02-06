@@ -60,7 +60,7 @@
   <project name="platform_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="aosip" />
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosip" />
   <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="aosip" />
-  <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" />
+  <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="aosip"/>
   <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="aosip"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosip" />
   <project name="platform_prebuilts_build-tools" path="prebuilts/build-tools" remote="aosip" />
