@@ -63,8 +63,9 @@
   <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="aosip"/>
   <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="aosip"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosip" />
-  <project name="platform_prebuilts_build-tools" path="prebuilts/build-tools" remote="aosip" />
+  <project name="platform_prebuilts_build-tools" path="prebuilts/build-tools" remote="aosip" revision="n-mr1" />
   <project name="platform_system_core" path="system/core" remote="aosip" />
+  <project name="platform_system_media" path="system/media" remote="aosip" />
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosip" />
   <project name="platform_vendor_aosip" path="vendor/aosip" remote="aosip" >
     <linkfile src="tools/sync.sh" dest="sync.sh" />
@@ -107,7 +108,6 @@
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
   <project name="platform_system_bt" path="system/bt" remote="aosp-caf" />
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
-  <project name="platform_system_media" path="system/media" remote="aosp-caf" />
   <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
