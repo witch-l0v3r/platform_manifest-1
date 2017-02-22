@@ -108,6 +108,7 @@
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosp-caf" />
   <project name="platform_system_bt" path="system/bt" remote="aosp-caf" />
   <project name="platform_system_extras" path="system/extras" remote="aosp-caf" />
+  <project name="platform_system_netd" path="system/netd" remote="aosp-caf" />
   <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
@@ -525,7 +526,6 @@
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="android-framework.lnx.2.0.r5-rel"/>
   <project name="platform/system/nativepower" path="system/nativepower" revision="android-framework.lnx.2.0.r5-rel"/>
-  <project groups="pdk" name="platform/system/netd" path="system/netd" revision="android-framework.lnx.2.0.r5-rel"/>
   <project name="platform/system/nvram" path="system/nvram" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk" name="platform/system/security" path="system/security" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="android-framework.lnx.2.0.r5-rel"/>
