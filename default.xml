@@ -54,6 +54,7 @@
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosip" />
   <project name="platform_packages_apps_DUI" path="packages/apps/DUI" remote="aosip" />
   <project name="platform_packages_apps_Gallery2" path="packages/apps/Gallery2" remote="aosip" />
+  <project name="platform_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="aosip" />
   <project name="platform_packages_apps_LockClock" path="packages/apps/LockClock" remote="aosip" />
   <project name="platform_packages_apps_Messaging" path="packages/apps/Messaging" remote="aosip" />
   <project name="platform_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="aosip" />
@@ -115,7 +116,6 @@
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
 <!-- END AOSP-CAF -->
 
 <!-- BEGIN LINEAGE-OS -->
@@ -445,7 +445,6 @@
   <project groups="pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="android_ui.lnx.2.1.r5-rel"/>
   <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="android_ui.lnx.2.1.r5-rel"/>
-  <project groups="pdk-fs" name="platform/packages/apps/FMRadio" path="packages/apps/FMRadio" revision="fm.lnx.2.1.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="android-framework.lnx.2.0.r5-rel"/>
   <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="android_ui.lnx.2.1.r5-rel"/>
