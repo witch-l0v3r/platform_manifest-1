@@ -131,7 +131,7 @@
 <!-- END LINEAGE-OS -->
 
 <!-- BEGIN SUBSTRATUM -->
-  <project name="substratum/masquerade" path="packages/apps/masquerade" remote="github" revision="n" />
+  <project name="substratum/interfacer" path="packages/apps/ThemeInterfacer" remote="github" revision="n" />
 <!-- END SUBSTRATUM -->
 
 <!-- BEGIN CODEAURORA -->
