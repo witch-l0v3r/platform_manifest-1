@@ -7,7 +7,7 @@
   <default revision="refs/tags/android-7.1.1_r22"
            remote="aosp"
            sync-j="8"
-	   sync-c="true" />
+	       sync-c="true" />
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -419,6 +419,7 @@
   <project path="packages/providers/CallLogProvider" name="platform/packages/providers/CallLogProvider" groups="pdk-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" groups="pdk-fs" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
@@ -474,18 +475,15 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/nativepower" name="platform/system/nativepower" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/tpm" name="platform/system/tpm" />
   <project path="system/update_engine" name="platform/system/update_engine" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="system/weaved" name="platform/system/weaved" />
   <project path="system/webservd" name="platform/system/webservd" />
   <project path="toolchain/binutils" name="toolchain/binutils" />
@@ -503,6 +501,7 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
 <!-- AOSiP -->
+  <project name="device_qcom_common" path="device/qcom/common" remote="aosip" />
   <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosip" />
   <project name="platform_build" path="build" remote="aosip" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -510,16 +509,19 @@
   <project name="platform_build_kati" path="build/kati" remote="aosip" />
   <project name="platform_art" path="art" remote="aosip" />
   <project name="platform_bionic" path="bionic" remote="aosip" />
+
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosip" />
   <project name="platform_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="aosip" />
   <project name="platform_external_bash" path="external/bash" remote="aosip" />
   <project name="platform_external_busybox" path="external/busybox" remote="aosip" />
   <project name="platform_external_connectivity" path="external/connectivity" remote="aosip" />
+  <project name="platform_external_DUtils" path="external/DUtils" remote="aosip" />
   <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="aosip" />
   <project name="platform_external_exfat" path="external/exfat" remote="aosip" />
   <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="aosip" />
   <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="aosip" />
   <project name="platform_external_fuse" path="external/fuse" remote="aosip" />
+  <project name="platform_external_google" path="external/google" remote="aosip" />
   <project name="platform_external_mksh" path="external/mksh" remote="aosip" />
   <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="aosip" />
   <project name="platform_external_okhttp" path="external/okhttp" remote="aosip" />
@@ -527,16 +529,18 @@
   <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="aosip" />
   <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosip" />
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosip" />
-  <project name="platform_external_DUtils" path="external/DUtils" remote="aosip" />
-  <project name="platform_external_google" path="external/google" remote="aosip" />
+
   <project name="platform_frameworks_av" path="frameworks/av" remote="aosip" />
   <project name="platform_frameworks_base" path="frameworks/base" remote="aosip" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="aosip" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosip" />
   <project name="platform_frameworks_support" path="frameworks/support" remote="aosip" />
+
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosip" />
   <project name="platform_hardware_qcom_fm" path="hardware/qcom/fm" remote="aosip" />
+
   <project name="platform_manifest" path="manifest" remote="aosip" />
+
   <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosip" />
   <project name="platform_packages_apps_CalendarWidget" path="packages/apps/CalendarWidget" remote="aosip" revision="n7x" />
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosip" />
@@ -554,17 +558,25 @@
   <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosip" />
   <project name="platform_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="aosip" />
   <project name="platform_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="aosip" />
-  <project name="platform_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="aosip"/>
   <project name="platform_packages_services_Telecomm" path="packages/services/Telecomm" remote="aosip"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosip" />
+
   <project name="platform_system_core" path="system/core" remote="aosip" />
+  <project name="platform_system_extras" path="system/extras" remote="aosip" />
   <project name="platform_system_media" path="system/media" remote="aosip" />
+  <project name="platform_system_netd" path="system/netd" remote="aosip" />
+  <project name="platform_system_vold" path="system/vold" remote="aosip" />
+  <project name="platform_system_qcom" path="system/qcom" remote="aosip" />
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosip" />
+
   <project name="platform_vendor_aosip" path="vendor/aosip" remote="aosip" >
     <linkfile src="tools/sync.sh" dest="sync.sh" />
   </project>
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="aosip" />
   <project name="platform_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="aosip" />
-
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="aosip" />
+  <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosip" />
+  <project path="vendor/qcom/opensource/time-services" name="platform_vendor_qcom_opensource_time-services" remote="aosip" />
 <!-- End AOSiP -->
 
 <!-- BEGIN LINEAGE-OS -->
